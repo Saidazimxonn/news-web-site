@@ -9,7 +9,9 @@ def page1(request):
     a=Blog.objects.all()
     return render(request, 'page/page.html',{'salom':a})
 
-
+def page2(request):
+    a=Blog.objects.all()
+    return render(request, 'page/page.html',{'salom':a})
 def people(request):
     a=3
     us=Users.objects.all()
