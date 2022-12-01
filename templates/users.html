@@ -1,0 +1,88 @@
+{% extends 'hello.html' %}
+
+{% block title %}
+Page Sahifa
+{% endblock title %}
+llitia dolorum ducimus suscipit exercitationem rem, ab eveniet dignissimos illum saepe maxime facere hic voluptas laboriosam reiciendis asperiores non obcaecati eaque, atque minima, minus est perspiciatis repellendus. Non, vel expedita optio provident, repudiandae iste eius nobis, magni ut et nulla magnam maiores explicabo? Error fugiat fugit, odio, eaque culpa ad repellat, in laborum facilis id corrupti esse aut itaque similique alias nulla ipsa commodi! Consectetur est fugiat ipsam ut totam. Hic quo deserunt tenetur animi natus temporibus labore fuga, quae culpa quia libero suscipit perferendis veniam accusamus commodi!</h1>
+{% block content %}
+To'liq kadval
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ismi</th>
+        <th scope="col">Familyasi</th>
+        <th scope="col">Darajasi</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in user %}
+        
+        
+        
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.l_name}}</td>
+        <td>{{i.position}}</td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+  <hr>
+  Talaba
+  <hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ismi</th>
+        <th scope="col">Familyasi</th>
+        <th scope="col">Darajasi</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in oqtuvchi %}
+        
+        
+        
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.l_name}}</td>
+        <td>{{i.position}}</td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+
+
+  
+  <hr>
+  O'qituvchi
+  <hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Ismi</th>
+        <th scope="col">Familyasi</th>
+        <th scope="col">Darajasi</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in talaba %}
+        
+        
+        
+      <tr>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.name}}</td>
+        <td>{{i.l_name}}</td>
+        <td>{{i.position}}</td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+{% endblock content %}

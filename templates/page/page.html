@@ -1,0 +1,20 @@
+{% extends 'hello.html' %}
+
+{% block title %}
+Page Sahifa
+{% endblock title %}
+
+{% block content %}
+    {% for i in salom %}
+      <h1>  {{i.user}} </h1> <br>  
+      <h1>  {{i.title}} </h1> <br>  
+      <h1>  {{i.Text}} </h1> <br>  
+      <h1>  {{i.date}} </h1> <br>  
+
+
+      
+    {% endfor %}
+
+
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, excepturi? Corporis consequatur mollitia dolorum ducimus suscipit exercitationem rem, ab eveniet dignissimos illum saepe maxime facere hic voluptas laboriosam reiciendis asperiores non obcaecati eaque, atque minima, minus est perspiciatis repellendus. Non, vel expedita optio provident, repudiandae iste eius nobis, magni ut et nulla magnam maiores explicabo? Error fugiat fugit, odio, eaque culpa ad repellat, in laborum facilis id corrupti esse aut itaque similique alias nulla ipsa commodi! Consectetur est fugiat ipsam ut totam. Hic quo deserunt tenetur animi natus temporibus labore fuga, quae culpa quia libero suscipit perferendis veniam accusamus commodi!</h1>
+{% endblock content %}
